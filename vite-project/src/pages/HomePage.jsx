@@ -35,15 +35,15 @@ function HomePage() {
     <>
       <section>
         <div>
-          <h1>Lista Film</h1>
-          <form onSubmit={searchMovies}>
+          <h1 className="mainTitle">Lista Film</h1>
+          <form className="formSection" onSubmit={searchMovies}>
             <input
               type="text"
               placeholder="Cerca un film..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
-            <button type="submit">Cerca</button>
+            <button className="formButton" type="submit">Cerca</button>
           </form>
         </div>
         <div className="cards-container">
