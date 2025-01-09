@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 import MovieCard from "../components/MovieCard";
@@ -8,6 +7,7 @@ function HomePage() {
   const [search, setSearch] = useState("");
 
   function fetchMovies() {
+    console.log("Chiamata API per:", search);
     axios
       .get("http://localhost:3000/api/movies", {
         params: {
@@ -24,6 +24,7 @@ function HomePage() {
 
   function searchMovies(e) {
     e.preventDefault();
+    console.log('Ricerca del film')
     fetchMovies();
   }
 
