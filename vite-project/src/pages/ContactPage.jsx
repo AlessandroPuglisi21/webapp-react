@@ -6,7 +6,7 @@ function ContactPage() {
         </div>
         <div className="container">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, sint est. Consequatur esse omnis culpa odit libero, veniam unde ad quibusdam! Adipisci accusantium itaque nobis, maxime nihil accusamus impedit ducimus?
+            PAGINA DEI CONTATTI
           </p>
         </div>
       </section>
