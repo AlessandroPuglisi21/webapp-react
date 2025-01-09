@@ -5,7 +5,9 @@ import Footer from "./Footer";
 function DefaultLayout() {
     return <div>
         <Header />
-        <Outlet />
+        <main>
+        <Outlet />  
+        </main>
         <Footer />
     </div>
 }

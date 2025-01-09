@@ -20,6 +20,9 @@ body{
     background-color: #ffffff;
 }
 
+
+/* HEADER */
+
 header {
     background-color: rgb(161, 24, 19);
     display: flex;
@@ -35,6 +38,8 @@ header {
     width: 100%;
   }
   
+/* NAVBAR */
+
   nav {
     display: flex;
   }
@@ -51,7 +56,7 @@ header {
   }
   
   a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
   }
   
@@ -59,4 +64,24 @@ header {
     text-decoration: underline;
   }
   
-  
+  /* FOOTER */
+  footer {
+    background-color: rgb(78, 7, 5);
+    color: #ffffff;
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+  }
+
+  footer div{
+    background-color: rgb(172, 54, 54);
+    padding:10px;
+    border-radius: 5px;
+    max-width: 200px;
+    display:flex;
+    justify-content: center;
+  }
+
+  main{
+    min-height: 100vh;
+  }
