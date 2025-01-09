@@ -5,7 +5,7 @@ function Header () {
     return <header>
         <div>
             <Link to ='/'>
-                <h1>My Site</h1>
+                <h1>Boolean Movies</h1>
             </Link>
             <Nav />
         </div>
