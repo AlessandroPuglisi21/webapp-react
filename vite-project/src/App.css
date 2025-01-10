@@ -183,3 +183,53 @@ input:focus {
     border-color: #ffffff;
     box-shadow: 0 0 5px rgba(173, 16, 16, 0.5);
 }
+
+/* MOVIE DETAILS */
+
+.movieDetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.movieDetails img{
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.movieInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  background-color: #a70f0f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* REVIEW */
+
+.review-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: #440303;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.reviewContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
