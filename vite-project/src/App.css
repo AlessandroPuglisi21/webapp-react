@@ -221,15 +221,14 @@ input:focus {
   padding: 10px;
   background-color: #440303;
   border-radius: 10px;
-  margin-right: 10px;
+  margin-right: 50px;
   margin-top: 10px;
   text-align: center;
 }
 
 .reviewContainer{
-  display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   padding: 20px;
+  text-align: center;
 }
