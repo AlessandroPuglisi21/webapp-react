@@ -12,6 +12,7 @@ function MoviesPage() {
             .get(`http://localhost:3000/api/movies/${id}`)
             .then((response) => {
                 setMovies(response.data);
+                console.log(response.data)
             })
             .catch((error) => {
                 console.error("Errore nel fetch", error);
@@ -28,7 +29,7 @@ function MoviesPage() {
                 <section>
                     <div className="movieDetails">
                         <h1 className="mainTitle">{movie.title.toUpperCase()}</h1>
-                        <img src='https://m.media-amazon.com/images/I/91Rc8cAmnAL.jpg' />
+                        <img src={`http://localhost:3000${movie.image}`} alt={movie.title} />
                         <div className="movieInfo">
                             <p><strong>Regista: </strong>{movie.director}</p>
                             <p><strong>Anno di Uscita: </strong> {movie.release_year}</p>
