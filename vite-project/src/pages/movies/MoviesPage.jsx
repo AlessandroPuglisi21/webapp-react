@@ -55,6 +55,28 @@ function MoviesPage() {
                     )}
                 </div>
             </section>
+            <form action="" className="formReview">
+                <h3>INSERISCI RECENSIONE</h3>
+                <p>
+                <label htmlFor="Nome">NOME:</label>
+                <input type="text" placeholder="Il tuo Nome" name='name' id='name' />
+                </p>
+                <p>
+                <label htmlFor="Nome">RECENSIONE:</label>
+                <input type="textarea" placeholder="Recensione" name='text' id='text' />
+                </p>
+                <p className='form-control'>
+              <label htmlFor="vote">Voto</label>
+              <select name="vote" id="vote">
+                <option value="1">1</option>
+                <option value="1">2</option>
+                <option value="1">3</option>
+                <option value="1">4</option>
+                <option value="1">5</option>
+              </select>
+            </p>
+            <button>INVIA</button>
+            </form>
         </>
     );
 }

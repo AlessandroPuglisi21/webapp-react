@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import StarsReview from "./StarsReview";
 
 function MovieCard({ movie }) {
     const { id, title, director, genre, release_year, abstract, image } = movie;
