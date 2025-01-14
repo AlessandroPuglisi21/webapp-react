@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useContext } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import ReviewCards from "../../components/ReviewCards";
+import GlobalContext from "../../../../context/globalContext";
 
 const initialFormData = {
   vote: 1,
@@ -15,6 +16,8 @@ function MoviesPage() {
   const [isFormValid, setIsFormValid] = useState(true);
   const { id } = useParams();
 
+const { setIsLoading } = useContext(GlobalContext);
+
   function fetchMovie() {
     axios
       .get(`http://localhost:3000/api/movies/${id}`)
@@ -23,6 +26,9 @@ function MoviesPage() {
       })
       .catch((error) => {
         console.error("Errore nel fetch", error);
+      })
+      .finally	(() => {
+        setIsLoading(false);
       });
   }
 

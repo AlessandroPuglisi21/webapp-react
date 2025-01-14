@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useContext } from "react";
 import axios from "axios";
 import MovieCard from "../components/MovieCard";
+import GlobalContext from "../../../context/globalContext";
 
 function HomePage() {
+  const { setIsLoading } = useContext(GlobalContext);
+  
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
 
@@ -19,6 +22,9 @@ function HomePage() {
       })
       .catch((error) => {
         console.error("Errore nel fetch", error);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   }
 
