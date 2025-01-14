@@ -324,8 +324,18 @@ label{
   z-index: 50;
 }
 
-.overlay{
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
   width: 2rem;
   height: 2rem;
   color: #ffffff;
+  animation: spin 2s linear infinite; 
 }
