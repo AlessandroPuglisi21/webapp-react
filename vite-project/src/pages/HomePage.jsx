@@ -10,6 +10,8 @@ function HomePage() {
   const [search, setSearch] = useState("");
 
   function fetchMovies() {
+   setIsLoading(true);
+
     console.log("Chiamata API per:", search);
     axios
       .get("http://localhost:3000/api/movies", {

@@ -310,3 +310,22 @@ label{
   color: rgb(238, 255, 0);
   font-size: 1.2rem;
 }
+
+.loaderOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.overlay{
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+}

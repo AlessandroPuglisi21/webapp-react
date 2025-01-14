@@ -19,6 +19,9 @@ function MoviesPage() {
 const { setIsLoading } = useContext(GlobalContext);
 
   function fetchMovie() {
+    
+    setIsLoading(true);
+
     axios
       .get(`http://localhost:3000/api/movies/${id}`)
       .then((response) => {
